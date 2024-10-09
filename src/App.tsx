@@ -30,27 +30,22 @@ function App() {
 
   return (
     <div>
-      <input
-        type="text"
-        value={input}
-        onChange={handleChange}
-        placeholder="Type something..."
+      <input 
+        type="text" value={input} 
+        onChange={handleChange} placeholder="Type something..."
       />
       {isPending && <p>Loading...</p>}
       <div>
         <label>
           <input
-            type="checkbox"
-            checked={useTransitionToggle}
+            type="checkbox" checked={useTransitionToggle}
             onChange={() => setUseTransitionToggle(!useTransitionToggle)}
           />
           With useTransition
         </label>
       </div>
       <ul>
-        {longList.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
+        {longList.map((item, index) => (<li key={index}>{item}</li>))}
       </ul>
     </div>
   );
