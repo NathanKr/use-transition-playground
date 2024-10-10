@@ -63,7 +63,7 @@ npm run dev
 <h3>Using isPending</h3>
 <p><code>isPending</code> is used to show a transition loading message while <code>longList</code> is rendering.</p>
 
-```ts
+```tsx
     <div>
       <input 
         type="text" value={input} 
