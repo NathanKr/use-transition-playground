@@ -14,6 +14,8 @@
 
 
 <h2 id="usage">Usage</h2>
+<p>This section provides instructions on how to run and use the project. 
+Follow the steps below to get started:</p>
 
 <h3>Invocation</h3>
 <p>Use the following command to run the development server:</p>
