@@ -62,13 +62,11 @@ npm run dev
 
 <h3>Using isPending</h3>
 <p><code>isPending</code> is used to show a transition loading message while <code>longList</code> is rendering.</p>
-
 ```ts
     <div>
       <input 
         type="text" value={input} 
-        onChange={handleChange} placeholder="Type something..."
-      />
+        onChange={handleChange} placeholder="Type something..."/>
       {isPending && <p>Loading...</p>}
       <div>
         <label>
@@ -79,9 +77,7 @@ npm run dev
           With useTransition
         </label>
       </div>
-      <ul>
-        {longList.map((item, index) => (<li key={index}>{item}</li>))}
-      </ul>
+      <ul>{longList.map((item, index) => (<li key={index}>{item}</li>))}</ul>
     </div>
 ```
 
